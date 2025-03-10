@@ -1,5 +1,5 @@
 import { ChangeEvent, useEffect, useRef, useState } from 'react';
-import './App.css'
+import './App.sass'
 
 interface ToDoItem {
   id?: number;
