@@ -13,10 +13,12 @@ Retrieves all ToDo items.
 ```json
 [
   {
+    "id": 1,
     "label": "Task 1",
     "checked": false
   },
   {
+    "id": 2,
     "label": "Task 2",
     "checked": true
   },
@@ -73,10 +75,32 @@ Retrieves a list of ToDo items with a specific label.
 ```json
 [
   {
+    "id": 1,
     "label": "Task 1",
     "checked": false
   }
 ]
+```
+
+### POST /api/todo
+
+Create a new ToDo item.
+
+**Request Body:**
+
+```json
+{
+  "label": "Updated Task",
+  "checked": true
+}
+```
+
+**Response:**
+
+```json
+{
+  "message": "Item created successfully"
+}
 ```
 
 ### POST /api/todo/:idx
