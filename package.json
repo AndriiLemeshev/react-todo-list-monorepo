@@ -10,14 +10,14 @@
     "dev:backend": "npm run dev --workspace=backend",
     "start:backend": "npm run start --workspace=backend",
     "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
-    "build": "npm run build:frontend && npm run build:backend"
+    "build": "npm run build:frontend && npm run build:backend",
+    "test": "npm run test --workspace=frontend"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "concurrently": "^9.1.2",
-    "sass": "^1.85.1"
+    "concurrently": "^9.1.2"
   },
   "workspaces": [
     "frontend",
