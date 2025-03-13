@@ -15,6 +15,7 @@ const HEADERS = new Headers();
 HEADERS.append('Content-Type', 'application/json; charset=utf-8');
 
 const TodoListItem: React.FC<ToDoItemProps> = ({id, label, checked, handle}) => <li
+  data-testid={'item-' + id}
   className={'todo-item' + (checked ? '-checked' : '')}
   onClick={() => handle(id!)}
 >{label}</li>;
